@@ -28,6 +28,7 @@ class Queue:
     itr = self.head
     while itr != self.last:
       print(itr.data, end = "=>")
+      itr = itr.next
     print("None")
 
 
