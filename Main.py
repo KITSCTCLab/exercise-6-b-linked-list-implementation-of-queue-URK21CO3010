@@ -26,7 +26,7 @@ class Queue:
   def status(self) -> None:
     # Write your code here
     itr = self.head
-    while itr != self.last:
+    while itr is not None:
       print(itr.data, end = "=>")
       itr = itr.next
     print("None")
